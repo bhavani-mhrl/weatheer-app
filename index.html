@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="weatherapp">
+        <header>
+            <form class="form">
+                <input type="search" id="Search-input" placeholder="Enter a city.." >
+                <input type="submit" id="search-button" value="Search">
+            </form>
+        </header>
+        <main>
+           <div class="temperature-container">
+                <div class="humidity-container">
+                    <h1 class="city" id="city">Paris</h1>
+                    <p class="humidity-data">
+                   <span id="date-time"> Wednesday 21:00, few clouds </span><br>
+                    Humidity: <span class="humidity" id="humidity">51%</span>, Wind: <span class="humidity" id="wind">3.09km/h</span>
+                    </p>
+                </div>
+                <div class="temperature">
+                    <div class="weather" id="weather"><img src="" alt="" id="weather-icon"></div>
+                    <div class="temp" id="Temperature-current">21</div>
+                    <div class="celsius">°C</div>
+                </div>
+           </div>
+        </main>
+        <footer>
+            <div class="links">
+                <p>This project was coded by <a href="">Bhavani Macharla</a>, is <a href="">Open sourced on github</a> and <a href=""> hosted on Netlify</a></p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

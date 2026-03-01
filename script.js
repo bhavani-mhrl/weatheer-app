@@ -19,8 +19,8 @@ function displayHumidity(response){
 
 function dateDisplay(response){
     let date=new Date();
-    let hours=checkHours(date.getHours());
-    let minutes=checkMinutes(date.getMinutes());
+    let hours=date.getHours();
+    let minutes=date.getMinutes();
     let days=["Sunday","Monday","Wednesday","thursday","Friday","Saturday"]
     let day=days[date.getDay()];
     let dateTime=document.querySelector("#date-time");
@@ -28,22 +28,6 @@ function dateDisplay(response){
     displayHumidity(response);
 }
 
-function checkHours(hours){
-    if(hours<10){
-        return `0${hours}`;
-    }
-    else{
-        return hours;
-    }
-}
-function checkMinutes(minutes){
-    if(minutes<10){
-        return `0${minutes}`;
-    }
-    else{
-        return minutes;
-    }
-}
 
 function displayResponse(response){
     let city=document.querySelector("#city");
